@@ -4,25 +4,58 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
-import product3 from "@/assets/product-3.jpg";
-import product4 from "@/assets/product-4.jpg";
-import product5 from "@/assets/product-5.jpg";
-import product6 from "@/assets/product-6.jpg";
+
+import home1 from "@assets/stock_images/handmade_ceramic_pot_3540a2c9.jpg";
+import home2 from "@assets/stock_images/handmade_ceramic_pot_0c479a95.jpg";
+import home3 from "@assets/stock_images/handmade_ceramic_pot_c17c2371.jpg";
+import home4 from "@assets/stock_images/handmade_ceramic_pot_84788735.jpg";
+import home5 from "@assets/stock_images/handmade_ceramic_pot_51fb79eb.jpg";
+
+import jewelry1 from "@assets/stock_images/handmade_jewelry_nec_290070c8.jpg";
+import jewelry2 from "@assets/stock_images/handmade_jewelry_nec_6235175f.jpg";
+import jewelry3 from "@assets/stock_images/handmade_jewelry_nec_cea2284e.jpg";
+import jewelry4 from "@assets/stock_images/handmade_jewelry_nec_ea29a118.jpg";
+import jewelry5 from "@assets/stock_images/handmade_jewelry_nec_6c0aebc1.jpg";
+
+import art1 from "@assets/stock_images/handmade_art_paintin_75e7ea8e.jpg";
+import art2 from "@assets/stock_images/handmade_art_paintin_c0650dff.jpg";
+import art3 from "@assets/stock_images/handmade_art_paintin_23ea4eb4.jpg";
+import art4 from "@assets/stock_images/handmade_art_paintin_79462805.jpg";
+import art5 from "@assets/stock_images/handmade_art_paintin_bee5f745.jpg";
+
+import clothing1 from "@assets/stock_images/handmade_knitted_clo_d5130e69.jpg";
+import clothing2 from "@assets/stock_images/handmade_knitted_clo_e6fa65ae.jpg";
+import clothing3 from "@assets/stock_images/handmade_knitted_clo_9d67f961.jpg";
+import clothing4 from "@assets/stock_images/handmade_knitted_clo_b2480ea7.jpg";
+import clothing5 from "@assets/stock_images/handmade_knitted_clo_098c08e7.jpg";
 
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const products = [
-    { id: 1, image: product1, title: "Handmade Ceramic Bowl", price: 45.00, seller: "Clay & Co.", category: "home" },
-    { id: 2, image: product2, title: "Macrame Wall Hanging", price: 68.00, seller: "Knotty Designs", category: "home" },
-    { id: 3, image: product3, title: "Wooden Cutting Board", price: 52.00, seller: "Timber Crafts", category: "home" },
-    { id: 4, image: product4, title: "Knitted Wool Blanket", price: 89.00, seller: "Cozy Knits", category: "clothing" },
-    { id: 5, image: product5, title: "Artisan Candle Set", price: 34.00, seller: "Glow Studio", category: "home" },
-    { id: 6, image: product6, title: "Botanical Art Print", price: 28.00, seller: "Nature Press", category: "art" },
-    { id: 7, image: product1, title: "Pottery Mug Collection", price: 38.00, seller: "Clay & Co.", category: "home" },
-    { id: 8, image: product2, title: "Handwoven Basket", price: 55.00, seller: "Knotty Designs", category: "home" },
+    { id: 1, image: home1, title: "Handmade Ceramic Vase", price: 65.00, seller: "Clay & Co.", category: "home" },
+    { id: 2, image: home2, title: "Artisan Pottery Bowl Set", price: 85.00, seller: "Pottery Studio", category: "home" },
+    { id: 3, image: home3, title: "Rustic Ceramic Planter", price: 48.00, seller: "Terra Crafts", category: "home" },
+    { id: 4, image: home4, title: "Hand-Thrown Stoneware Mug", price: 32.00, seller: "Clay & Co.", category: "home" },
+    { id: 5, image: home5, title: "Decorative Ceramic Pot", price: 55.00, seller: "Pottery Studio", category: "home" },
+    
+    { id: 6, image: jewelry1, title: "Handcrafted Pearl Necklace", price: 125.00, seller: "Gem Artisan", category: "jewelry" },
+    { id: 7, image: jewelry2, title: "Sterling Silver Bracelet", price: 98.00, seller: "Silver & Stone", category: "jewelry" },
+    { id: 8, image: jewelry3, title: "Artisan Beaded Earrings", price: 45.00, seller: "Bead Haven", category: "jewelry" },
+    { id: 9, image: jewelry4, title: "Gold-Plated Ring Set", price: 110.00, seller: "Gem Artisan", category: "jewelry" },
+    { id: 10, image: jewelry5, title: "Vintage Style Pendant", price: 78.00, seller: "Silver & Stone", category: "jewelry" },
+    
+    { id: 11, image: art1, title: "Abstract Canvas Painting", price: 240.00, seller: "Modern Art Co.", category: "art" },
+    { id: 12, image: art2, title: "Watercolor Landscape Print", price: 68.00, seller: "Nature Canvas", category: "art" },
+    { id: 13, image: art3, title: "Contemporary Art Piece", price: 195.00, seller: "Artistic Vision", category: "art" },
+    { id: 14, image: art4, title: "Botanical Illustration Set", price: 85.00, seller: "Nature Canvas", category: "art" },
+    { id: 15, image: art5, title: "Modern Abstract Print", price: 155.00, seller: "Modern Art Co.", category: "art" },
+    
+    { id: 16, image: clothing1, title: "Hand-Knitted Wool Scarf", price: 58.00, seller: "Cozy Knits", category: "clothing" },
+    { id: 17, image: clothing2, title: "Chunky Knit Sweater", price: 125.00, seller: "Yarn & Thread", category: "clothing" },
+    { id: 18, image: clothing3, title: "Artisan Knitted Beanie", price: 42.00, seller: "Cozy Knits", category: "clothing" },
+    { id: 19, image: clothing4, title: "Handmade Crochet Shawl", price: 95.00, seller: "Fiber Arts", category: "clothing" },
+    { id: 20, image: clothing5, title: "Wool Blend Cardigan", price: 135.00, seller: "Yarn & Thread", category: "clothing" },
   ];
 
   const filteredProducts = selectedCategory === "all"

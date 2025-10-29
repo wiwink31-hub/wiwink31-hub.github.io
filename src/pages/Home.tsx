@@ -4,21 +4,26 @@ import ProductCard from "@/components/ProductCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-home.jpg";
-import product1 from "@/assets/product-1.jpg";
-import product2 from "@/assets/product-2.jpg";
-import product3 from "@/assets/product-3.jpg";
-import product4 from "@/assets/product-4.jpg";
-import product5 from "@/assets/product-5.jpg";
-import product6 from "@/assets/product-6.jpg";
+
+import home1 from "@assets/stock_images/handmade_ceramic_pot_3540a2c9.jpg";
+import home2 from "@assets/stock_images/handmade_ceramic_pot_0c479a95.jpg";
+import jewelry1 from "@assets/stock_images/handmade_jewelry_nec_290070c8.jpg";
+import jewelry2 from "@assets/stock_images/handmade_jewelry_nec_6235175f.jpg";
+import art1 from "@assets/stock_images/handmade_art_paintin_75e7ea8e.jpg";
+import art2 from "@assets/stock_images/handmade_art_paintin_c0650dff.jpg";
+import clothing1 from "@assets/stock_images/handmade_knitted_clo_d5130e69.jpg";
+import clothing2 from "@assets/stock_images/handmade_knitted_clo_e6fa65ae.jpg";
 
 const Home = () => {
   const featuredProducts = [
-    { id: 1, image: product1, title: "Handmade Ceramic Bowl", price: 45.00, seller: "Clay & Co." },
-    { id: 2, image: product2, title: "Macrame Wall Hanging", price: 68.00, seller: "Knotty Designs" },
-    { id: 3, image: product3, title: "Wooden Cutting Board", price: 52.00, seller: "Timber Crafts" },
-    { id: 4, image: product4, title: "Knitted Wool Blanket", price: 89.00, seller: "Cozy Knits" },
-    { id: 5, image: product5, title: "Artisan Candle Set", price: 34.00, seller: "Glow Studio" },
-    { id: 6, image: product6, title: "Botanical Art Print", price: 28.00, seller: "Nature Press" },
+    { id: 1, image: home1, title: "Handmade Ceramic Vase", price: 65.00, seller: "Clay & Co." },
+    { id: 2, image: home2, title: "Artisan Pottery Bowl Set", price: 85.00, seller: "Pottery Studio" },
+    { id: 6, image: jewelry1, title: "Handcrafted Pearl Necklace", price: 125.00, seller: "Gem Artisan" },
+    { id: 7, image: jewelry2, title: "Sterling Silver Bracelet", price: 98.00, seller: "Silver & Stone" },
+    { id: 11, image: art1, title: "Abstract Canvas Painting", price: 240.00, seller: "Modern Art Co." },
+    { id: 12, image: art2, title: "Watercolor Landscape Print", price: 68.00, seller: "Nature Canvas" },
+    { id: 16, image: clothing1, title: "Hand-Knitted Wool Scarf", price: 58.00, seller: "Cozy Knits" },
+    { id: 17, image: clothing2, title: "Chunky Knit Sweater", price: 125.00, seller: "Yarn & Thread" },
   ];
 
   const categories = [
